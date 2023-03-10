@@ -1,0 +1,1871 @@
+<!DOCTYPE html><html lang="en-US"><head>
+<title>RPCS3 - Quickstart</title>
+<meta charset="utf-8">
+<meta name="description" content="Hardware requirements for RPCS3 may vary depending on your system. We cannot guarantee the performance of system specifications below the recommended requirements, but you're welcome to experiment.">
+<meta name="keywords" content="rpcs3, playstation, playstation 3, ps3, emulator, debugger, windows, linux, macos, freebsd, open source, nekotekina, kd11, quickstart">
+<meta name="author" content="RPCS3">
+<meta name="copyright" content="RPCS3">
+<link rel="icon" type="image/png" href="images/RGw0M7oAlnht.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/LGrPFbD6bsST.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/XJyyzyQcUzkD.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/GkAXIJrgUbUe.png" sizes="128x128">
+<link rel="icon" type="image/png" href="images/v5383bZDDSui.png" sizes="196x196">
+<link rel="apple-touch-icon" href="images/B2DUkNxXE1NK.png" sizes="57x57">
+<link rel="apple-touch-icon" href="images/6Rwye3RNy0tp.png" sizes="60x60">
+<link rel="apple-touch-icon" href="images/uUciGqqY496G.png" sizes="72x72">
+<link rel="apple-touch-icon" href="images/bCJvBFsStkLO.png" sizes="76x76">
+<link rel="apple-touch-icon" href="images/0EecUabdoWV2.png" sizes="114x114">
+<link rel="apple-touch-icon" href="images/pdwqEMSw1v5L.png" sizes="120x120">
+<link rel="apple-touch-icon" href="images/18a1qlfr8qOe.png" sizes="144x144">
+<link rel="apple-touch-icon" href="images/aRmVvX5L1NFn.png" sizes="152x152">
+<link rel="manifest" href="/lib/js/manifest.json">
+<meta name="theme-color" content="#686de0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta property="og:title" content="RPCS3 - Quickstart">
+<meta property="og:description" content="Hardware requirements for RPCS3 may vary depending on your system. We cannot guarantee the performance of system specifications below the recommended requirements, but you're welcome to experiment.">
+<meta property="og:image" content="images/qR2TEFunZFD1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://rpcs3.net">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RPCS3">
+<meta name="twitter:title" content="RPCS3 - Quickstart">
+<meta name="twitter:description" content="Hardware requirements for RPCS3 may vary depending on your system. We cannot guarantee the performance of system specifications below the recommended requirements, but you're welcome to experiment.">
+<meta name="twitter:image" content="https://rpcs3.net/img/meta/mobile/1200.png">
+<meta name="twitter:site" content="@rpcs3">
+<meta name="twitter:creator" content="@rpcs3">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" type="text/css" href="css/rRsRuf3Ww9C1.css">
+<link rel="stylesheet" type="text/css" href="css/s5E4Doo2TDXI.css">
+<link rel="stylesheet" type="text/css" href="css/UzonOjNLMLBJ.css">
+<link rel="stylesheet" type="text/css" href="css/Y3o7Y0ByQoNW.css">
+<link rel="stylesheet" type="text/css" href="css/ePqhtipuuHQG.css">
+<script data-cfasync="false" src="js/EWB6H5JRFGt5.js"></script>
+<script data-cfasync="false" src="js/36tCMZ7w5msy.js"></script>
+<script data-cfasync="false" src="js/PkCQ4WpIN3Rf.js"></script>
+<script data-cfasync="false" src="js/p3hVmxG98stE.js"></script>
+<script data-cfasync="false" src="js/9Bp7OLmkApwT.js"></script>
+<script data-cfasync="false" src="js/Bd94d746W5OS.js"></script>
+<noscript>
+<style>
+/*
+General:
+- Elements that fade in are not visible by default
+*/
+.fade-up-onstart {
+	display:inherit;
+}
+.fade-in-onload {
+	display:inherit;
+}
+/*
+Index:
+- Center index contents
+*/
+.landing-con-container {
+	top:50%;
+	margin-top:-139px;
+}
+/*
+Quickstart:
+- Remove dimming
+- Do not block interaction outside the sidebar
+- Slightly reduce the width of the sidebar
+*/
+.toggle-navsidebar {
+	background:none;
+	width:auto;
+}
+.sidebar-con-anim {
+	width:300px;
+}
+</style>
+</noscript>
+</head>
+<body>
+<div class="menu-con-release">
+<span>Website Release Preview 2021.12.05</span>
+</div>
+<div class="mini-menu-con-dimmer">
+<div class="mini-menu-con-container">
+<div class="mini-menu-ico-logo">
+</div>
+<div class="mini-menu-tx1-block">
+<div class="mini-menu-emp-block">
+</div>
+<h2>No Piracy.</h2>
+</div>
+<div class="mini-menu-tx2-block">
+<p>
+We do not condone piracy of any kind. <u>Asking</u> for, <u>providing</u> or <u>discussing</u> illegal download links is <b>not allowed</b> in our communities.<br>
+<br>
+Purchasing legitimate game copies, through the <u>PlayStation Store</u> or through acquiring game discs, and using those copies with RPCS3 is the best way to ensure you will have a clean copy that will work with the emulator. You can use your <b>legal</b> copies with RPCS3 by following the instructions in our <a href="/quickstart" target="_blank">Quickstart</a> guide.
+</p>
+</div>
+<div class="mini-menu-btn-agree">
+<h2>I Understand</h2>
+</div>
+</div>
+</div>
+<div class="menu-con-message fade-out-onload">
+<div class="menu-tx1-message toggle-message fade-out-onload">
+<span>We are currently experiencing a higher server volume than usual. We sincerely apologize for any inconveniences.</span>
+</div>
+</div>
+<div class="window-con-theme">
+<div class="window-bg-theme">
+</div>
+<div class="theme-con-spinner">
+<div class="theme-ico-spinner">
+</div>
+</div>
+<div class="theme-tx1-description pulsate">
+<span>This feature is currently not yet available</span>
+</div>
+<div class="wavebar-con-container-theme">
+<div class="wavebar-con-wrap">
+<div class="wavebar-svg-object">
+</div>
+<div class="wavebar-svg-object">
+</div>
+</div>
+</div>
+</div>
+<div class="theme-btn-close toggle-theme">
+</div>
+<div class="settings-menu-con-outer settings-submenu">
+<div class="settings-menu-con-wrapper toggle-darkmode settings-menu-upper">
+<div class="settings-menu-ico-darkmode">
+</div>
+<div class="settings-menu-btn-button btn-darkmode">
+<span>Dark Theme - On/Off</span>
+</div>
+</div>
+<div class="settings-menu-con-divider">
+</div>
+<div class="settings-menu-con-wrapper toggle-transparency">
+<div class="settings-menu-ico-transparency">
+</div>
+<div class="settings-menu-btn-button btn-transparency">
+<span>Transparency - On</span>
+</div>
+</div>
+<div class="settings-menu-con-divider">
+</div>
+<div class="settings-menu-con-wrapper toggle-particles">
+<div class="settings-menu-ico-particles">
+</div>
+<div class="settings-menu-btn-button btn-particles">
+<span>Particles - On</span>
+</div>
+</div>
+<div class="settings-menu-con-divider">
+</div>
+<div class="settings-menu-con-wrapper toggle-pulsate">
+<div class="settings-menu-ico-pulsate">
+</div>
+<div class="settings-menu-btn-button btn-pulsate">
+<span>Pulsate - On</span>
+</div>
+</div>
+<div class="settings-menu-con-divider">
+</div>
+<div class="settings-menu-con-wrapper toggle-waves">
+<div class="settings-menu-ico-waves">
+</div>
+<div class="settings-menu-btn-button btn-waves">
+<span>Waves - On</span>
+</div>
+</div>
+<div class="settings-menu-con-divider">
+</div>
+<div class="settings-menu-con-wrapper toggle-theme settings-menu-lower" style="border-top: solid 1px rgba(0,0,0,.02);">
+<div class="settings-menu-ico-theme">
+</div>
+<div class="settings-menu-btn-button btn-theme">
+<span>Change Theme</span>
+</div>
+</div>
+</div>
+<div class="menu-btn-backtotop">
+</div>
+<div class="menu-con-container">
+<div class="menu-con-backdrop darkmode-menu">
+</div>
+<div class="menu-btn-settings toggle-settings">
+</div>
+<div class="menu-con-outer">
+<div class="menu-con-inner">
+<div class="menu-con-logo">
+<a href="/">
+<div class="menu-ico-logo">
+</div>
+</a>
+</div>
+<div class="mobile-menu-btn-open toggle-mobilemenu">
+</div>
+<div class="mobile-menu-btn-darkmode toggle-darkmode">
+</div>
+<a href="/blog">
+<div class="menu-btn-select">
+<span>Blog</span>
+</div>
+</a>
+<a href="/about">
+<div class="menu-btn-select">
+<span>About</span>
+</div>
+</a>
+<a href="/compatibility">
+<div class="menu-btn-select">
+<span>Compatibility</span>
+</div>
+</a>
+<a href="/download">
+<div class="menu-btn-select">
+<span>Download</span>
+</div>
+</a>
+<a href="/quickstart">
+<div class="menu-btn-select">
+<span>Quickstart</span>
+</div>
+</a>
+<a href="/roadmap">
+<div class="menu-btn-select">
+<span>Roadmap</span>
+</div>
+</a>
+<a href="/faq">
+<div class="menu-btn-select">
+<span>FAQs</span>
+</div>
+</a>
+<div class="menu-con-divider">
+</div>
+<a href="https://github.com/LeoGame1" target="_blank">
+<div class="menu-btn-select">
+<span>GitHub</span>
+</div>
+</a>
+<a href="https://forums.rpcs3.net" target="_blank">
+<div class="menu-btn-select">
+<span>Forum</span>
+</div>
+</a>
+</a>
+<a href="https://discord.gg/Jfff8WUz7N" target="_blank">
+<div class="menu-btn-select">
+<span>Discord</span>
+</div>
+</a>
+<a href="https://www.youtube.com/c/RPCS3_emu/videos" target="_blank">
+<div class="menu-btn-select">
+<span>YouTube</span>
+</div>
+</a>
+<div class="support-con-menu">
+<a href="https://www.patreon.com/Nekotekina" target="_blank">
+<div class="support-ico-menu">
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-menu-con-container popup-mobilemenu" style="display:none;">
+<div class="menu-con-backdrop-2">
+</div>
+<div class="mobile-menu-con-scroll">
+<div class="mobile-menu-con-outter">
+<div class="mobile-menu-con-inner" style="overflow: hidden !important;">
+<div class="mobile-menu-tx1-group">
+<span>Main</span>
+</div>
+<div class="mobile-menu-con-divider">
+</div>
+<a href="/">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Home</span>
+</div>
+</a>
+<a href="/blog">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Blog</span>
+</div>
+</a>
+<a href="/about">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>About</span>
+</div>
+</a>
+<a href="/compatibility">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Compatibility</span>
+</div>
+</a>
+<a href="/download">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Download</span>
+</div>
+</a>
+<a href="/quickstart">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Quickstart</span>
+</div>
+</a>
+<a href="/roadmap">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Roadmap</span>
+</div>
+</a>
+<a href="/faq">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>FAQs</span>
+</div>
+</a>
+<a href="https://forums.rpcs3.net" target="_blank">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Forum</span>
+</div>
+</a>
+</a>
+<div class="mobile-menu-tx1-group">
+<span>Internal</span>
+</div>
+<div class="mobile-menu-con-divider">
+</div>
+<a href="/branding">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Branding</span>
+</div>
+</a>
+<a href="/disclaimer">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Disclaimer</span>
+</div>
+ </a>
+<div class="mobile-menu-tx1-group">
+<span>External</span>
+</div>
+<div class="mobile-menu-con-divider">
+</div>
+<a href="https://github.com/LeoGame1" target="_blank">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>GitHub</span>
+</div>
+</a>
+<a href="https://discord.gg/Jfff8WUz7N" target="_blank">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Discord</span>
+</div>
+</a>
+<a href="https://www.youtube.com/c/RPCS3_emu/videos" target="_blank">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>YouTube</span>
+</div>
+</a>
+<div class="mobile-menu-tx1-group">
+<span>Support</span>
+</div>
+<div class="mobile-menu-con-divider">
+</div>
+<a href="https://www.patreon.com/Nekotekina">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Patreon</span>
+</div>
+</a>
+<a href="/alipay">
+<div class="mobile-menu-btn-icon">
+</div>
+<div class="mobile-menu-btn-select">
+<span>Alipay</span>
+</div>
+</a>
+<div class="mobile-menu-btn-spacer">
+</div>
+</div>
+</div>
+</div>
+</div><div class="sidebar-btn-open nav-standard scale-menu-btn-remove">
+</div>
+<div class="sidebar-con-dimmer toggle-navsidebar" style="display:block">
+<div class="sidebar-con-anim dropin-load darkmode-navsidebar-anim">
+<div class="sidebar-tx1-title darkmode-navsidebar-title" style="-webkit-animation-duration: .4s;">
+<div class="sidebar-emp-block">
+</div>
+<span>Table of Contents</span>
+</div>
+<div class="sidebar-con-container">
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+<span>System requirements</span>
+</div>
+<a href="#requirements_desktop" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Hardware requirements</span>
+</div>
+</a>
+<a href="#requirements_laptop" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Laptop requirements</span>
+</div>
+</a>
+<a href="#requirements_software" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Software requirements</span>
+</div>
+</a>
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+<span>Updates and firmware</span>
+</div>
+<a href="#update_rpcs3" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Updating RPCS3</span>
+</div>
+</a><a href="#install_rpcs3_firmware" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Installing RPCS3 firmware</span>
+</div>
+</a>
+
+<a href="#manage_playstation_3_game_data" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Managing PS3 game data</span>
+</div>
+</a>
+<a href="#manage_playstation_3_save_data" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Managing PS3 save data</span>
+</div>
+</a>
+<a href="#manage_playstation_3_formats" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Managing PS3 formats</span>
+</div>
+</a>
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+<span>Installing and updating games</span>
+</div>
+<a href="#install_playstation_3_games" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Installing PS3 game data</span>
+</div>
+</a>
+<a href="#install_playstation_3_updates" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Installing PS3 game updates</span>
+</div>
+</a>
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+<span>Software legalities</span>
+</div>
+<a href="#software_distribution" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Software distribution</span>
+</div>
+</a>
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+ <span>Dumping devices</span>
+</div>
+<a href="#dumping_with_playstation_3" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Dumping with a PlayStation 3</span>
+</div>
+</a>
+<a href="#dumping_with_pc" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Dumping with a desktop PC</span>
+</div>
+</a>
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+<span>Compatible BD drives</span>
+</div>
+<a href="#compatible_bd_drives" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Compatible BD drives</span>
+</div>
+</a>
+<a href="#compatible_bdd_lg" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Manufactured by LG</span>
+</div>
+</a>
+<a href="#compatible_bdd_asus" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Manufactured by ASUS</span>
+</div>
+</a>
+<a href="#compatible_bdd_samsung" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Manufactured by Samsung</span>
+</div>
+</a>
+<a href="#compatible_bdd_lite_on" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Manufactured by LITE-ON</span>
+</div>
+</a>
+<a href="#compatible_bdd_sony" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Manufactured by Sony</span>
+</div>
+</a>
+<a href="#compatible_bdd_benq" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Manufactured by BenQ</span>
+</div>
+</a>
+
+<div class="sidebar-tx1-subtitle darkmode-navsidebar-txt">
+<span>Dumping methods</span>
+</div>
+<a href="#dumping_with_linux" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Dumping with Linux command line</span>
+</div>
+</a>
+<a href="#dumping_with_disc_dumper" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Dumping with Disc Dumper</span>
+</div>
+</a>
+<a href="#dumping_step_by_step" rel="anchor-select">
+<div class="sidebar-tx2-subtitle">
+<span>Dumping Step-by-step</span>
+</div>
+</a>
+<div class="sidebar-con-spacer">
+</div>
+
+</div>
+</div>
+</div>
+<div class="page-con-content">
+<div class="banner-con-container darkmode-header">
+<div id="object-particles">
+</div>
+<div class="wavebar-con-container">
+<div class="wavebar-con-wrap">
+<div class="wavebar-svg-object">
+</div>
+<div class="wavebar-svg-object">
+</div>
+</div>
+</div>
+<div class="banner-con-title fade-up-onstart">
+<div class="banner-tx1-title fade-up-onstart pulsate">
+<h1>Quickstart</h1>
+</div>
+<div class="banner-con-divider">
+</div>
+<div class="banner-tx2-title fade-up-onstart">
+<p>
+Get RPCS3 up and running on your PC
+</p>
+</div>
+</div>
+</div>
+<div class="page-con-container">
+<div class="page-in-container">
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="requirements_desktop">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<div class="container-emp-block">
+</div>
+<h2>Desktop PC Requirements</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+The hardware requirements for running the emulator vary depending on your current configuration. We have listed the minimum and recommend hardware requirements below. For the best experience, users should be running within the recommended requirements. We cannot guarantee the performance of system specifications below the recommended requirements but you're always welcome to experiment.
+</p>
+</div>
+</div>
+</div>
+<div class="spec-con-container">
+<div class="spec-con-max darkmode-txt">
+<div class="spec-con-title spec-max"><h2>Recommended Requirements</h2></div>
+<div class="spec-con-desc"><h3>For running all playable games with playable performance</h3></div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/KB1ADMa4EQ7E.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>CPU</h3></div>
+<div class="item-tx2-desc">
+<p>AMD - 6 cores and 12 threads, 8 cores or more</p>
+<span>AMD Zen 2 architecture or newer</span><br>
+<span>AMD Threadripper 1000 and 2000 series are not recommended</span><br><br>
+<p>Intel - 6 cores and 12 threads, 8 cores or more</p>
+<span>Intel Skylake architecture or newer</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/cSDqpit4pPfe.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>GPU</h3></div>
+<div class="item-tx2-desc">
+<p>AMD - Vulkan compatible with active driver support</p>
+<span>AMD Polaris architecture, RX 400 series or newer</span><br><br>
+<p>NVIDIA - Vulkan compatible with active driver support</p>
+<span>NVIDIA Maxwell architecture, GTX 900 series or newer</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/B1HuCAUtIkSC.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>RAM</h3></div>
+<div class="item-tx2-desc">
+<p>8 GB of dual-channel RAM or more</p>
+<span>Dual-channel memory is highly recommended over single-channel</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/pbVa0GMh6EBr.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>Storage</h3></div>
+<div class="item-tx2-desc">
+<p>SSD storage for emulator data, SSD or HDD storage for games</p><br>
+<span>512 MB for base emulator data, 5 GB for virtual console dev_hdd1 cache</span><br>
+<span>128 MB for emulator cache and console user data per installed game*</span><br>
+<span>* Average recommendation. Some games may require more, most games require less</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/ZKMgKk2pxDN5.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>OS</h3></div>
+<div class="item-tx2-desc">
+<p>Windows</p>
+<span>Windows 10 22H2 or newer, Windows 11 22H2 or newer</span><br><br>
+<p>Linux</p>
+<span>Linux 6.2 (Latest), 6.1 (LTS) or newer</span><br><br>
+<p>macOS</p>
+<span>macOS Monterey 12.3 or newer</span><br><br>
+<p>FreeBSD</p>
+<span>FreeBSD 13.1 or newer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-min darkmode-txt">
+<div class="spec-con-title spec-min"><h2>Minimum Requirements</h2></div>
+<div class="spec-con-desc"><h3>For being able to run any games at all, no performance or stability guarantees</h3></div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/KB1ADMa4EQ7E.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>CPU</h3></div>
+<div class="item-tx2-desc">
+<p>AMD - Any x64 CPU</p>
+<span>CPUs without AVX2 and with less than 4 cores and 8 threads are expected to run very badly overall</span><br>
+<span>CPUs with only 2 cores per CCX cluster are expected to run very badly overall</span><br><br>
+<p>Intel - Any x64 CPU</p>
+<span>CPUs without AVX2 and with less than 4 cores and 8 threads are expected to run very badly overall</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="req-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/cSDqpit4pPfe.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>GPU</h3></div>
+<div class="item-tx2-desc">
+<p>AMD - OpenGL 4.3 compatible or newer</p>
+<span>AMD Evergreen architecture, HD 5000 series or newer</span><br><br>
+<p>NVIDIA - OpenGL 4.3 compatible or newer</p>
+<span>NVIDIA Fermi architecture, GTX 400 series or newer</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="spec-con-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/B1HuCAUtIkSC.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>RAM</h3></div>
+<div class="item-tx2-desc">
+<p>4 GB of RAM or more</p>
+<span>4 GB is the absolute minimum requirement</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="spec-con-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/pbVa0GMh6EBr.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>Storage</h3></div>
+<div class="item-tx2-desc">
+<p>SSD or HDD storage for emulator data and games</p><br>
+<span>512 MB for base emulator data, 5 GB for virtual console dev_hdd1 cache</span><br>
+<span>128 MB for emulator cache and console user data per installed game*</span><br>
+<span>* Average recommendation. Some games may require more, most games require less</span>
+</div>
+</div>
+</div>
+</div>
+<div class="spec-con-divider darkmode-divider"></div>
+<div class="spec-con-item">
+<div class="item-con-inner">
+<div class="item-ico-text darkmode-invert" style="background: url(images/ZKMgKk2pxDN5.png) no-repeat center; background-size: contain;"></div>
+<div class="item-con-text">
+<div class="item-tx1-title"><h3>OS</h3></div>
+<div class="item-tx2-desc">
+<p>Windows</p>
+<span>Windows 7 SP1, Windows 8.1, Windows 10, Windows 11</span><br><br>
+<p>Linux</p>
+<span>Linux 5.4 (Older LTS), Ubuntu 18.04 or newer</span><br><br>
+<p>macOS</p>
+<span>macOS Monterey 12.0 or newer</span><br><br>
+<p>FreeBSD</p>
+<span>FreeBSD 12.3 or newer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-con-wrapper">
+<div class="anchor-point" id="requirements_laptop">
+</div>
+<div class="container-tx1-block darkmode-txt">
+<h2>Laptop PC Requirements</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+We recommend using a laptop equipped with an <span class="highlight darkmode-highlight">8-core/16-thread</span> 35W+ H-series CPU such as an Intel Core i7-10870H or an AMD Ryzen 7 5800H, as well as having a compatible <span class="highlight darkmode-highlight">dedicated GPU (dGPU)</span> with Vulkan compatibility. While being a tall order, this is the ideal spec and we cannot guarantee even remotely good performance with laptops equipped with as little as 4-cores.<br>
+<br>
+We strongly recommend using RPCS3 with a desktop PC over a laptop. Should you want to use a laptop, these are the hardware requirements for an optimal experience.
+</p>
+</div>
+</div>
+<div class="container-con-wrapper">
+<div class="anchor-point" id="requirements_software">
+</div>
+<div class="container-tx1-block darkmode-txt">
+<h2>Software Requirements</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+The software requirements for running the emulator must be met in order for the software to function at all. The PlayStation 3 system software is required because it is utilized to load system files for the emulator such as the PlayStation 3's proprietary system libraries. Linux and FreeBSD based operating systems do not require the Microsoft Visual C++ 2019 redistributable.<br>
+<br>
+<span class="context-important">Please note - </span> A 64-bit operating system is required. Windows 7, 8, 10 and 11 are supported as well as Linux, FreeBSD and macOS.<br>
+</p>
+</div>
+</div>
+<div class="generic-con-button ">
+<a href="https://www.playstation.com/en-us/support/hardware/ps3/system-software/" target="_blank">
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/2FNLTEoRuxxG.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>PlayStation 3 System Software <span class="generic-tx2-label">Required*</span></span>
+</div>
+</div>
+</a>
+<a href="https://aka.ms/vs/16/release/VC_redist.x64.exe" target="_blank">
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/dl9ZeMbYvTku.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>Visual C++ 2019 Redistributable <span class="generic-tx2-label">Windows*</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="update_rpcs3">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Installing RPCS3 Updates</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+RPCS3 features an auto-updater which will prompt you if you want to update after loading the emulator. You can either accept, deny or disable updates all together if you wish, though it is not recommended to disable updates due to the volume of fixes that roll out each day. In the instance that you need to update RPCS3 manually, you can follow the following instructions:
+</p>
+</div>
+</div>
+</div>
+<div class="guide-con-content context-windows darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/i2PBR7dtcaNN.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For Windows users, download and extract the latest build then drag and drop all files into your RPCS3 root directory, overwriting all files when prompted.
+</p>
+</div>
+</div>
+<div class="guide-con-content context-linux darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/FrQrB2ZbanaP.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For Linux users, download the latest AppImage and make it executable with the command <span class="linux-highlight darkmode-highlight">chmod a+x ./rpcs3-*_linux64.AppImage && ./rpcs3-*_linux64.AppImage</span>
+</p>
+</div>
+</div>
+<div class="guide-con-content context-macos darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/N6tDC2Fs7qFj.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For macOS users, simply open the downloaded .DMG file and drag and drop the RPCS3 app into your applications folder when prompted.
+</p>
+</div>
+</div>
+<div class="guide-con-content context-bsd darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/On8kny7BA9Zy.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For FreeBSD users, check your system package manager
+</p>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="install_rpcs3_firmware">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Installing RPCS3 PlayStation 3 Firmware</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+Due to legal reasons, we cannot distribute official PlayStation 3 firmware files. You must download the latest PlayStation 3 firmware update file from <a href="https://www.playstation.com/en-us/support/hardware/ps3/system-software/">PlayStation.com</a> for use with RPCS3. Once downloaded, you must install the firmware using RPCS3's built in firmware installer found under <span class="highlight darkmode-highlight">File > Install Firmware.</span><br>
+<br>
+By default, firmware modules are loaded automatically based on the PlayStation 3 title that is loaded. You can still override automatic module loading and choose which firmware modules you want to use manually. Manually overriding firmware modules is not recommended.
+</p>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="manage_playstation_3_game_data">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Managing PlayStation 3 Game Data</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+Due to legal reasons, PlayStation 3 titles cannot be distributed online and must be self-dumped from your own PlayStation 3 console or from your computer using a compatible Blu-ray drive.
+</p>
+<br>
+<p>
+Both Blu-ray and PlayStation Network titles (PSN) must be placed into a single folder with their respective files and the folder name must correspond to the title's ID. If you are not sure what your dumped title's region ID is, you can find your region ID on the bottom side-edge of your game case. If you are no longer in possession of your title's game case or your title is only accessible through PSN, you can do an internet search for <span class="highlight darkmode-highlight">"Your game name here</span> + <span class="highlight darkmode-highlight">region ID"</span>. Please note that it is very important that you use the correct region ID. <br>
+</p>
+<br>
+<p>
+Typical layout of a Blu-ray disc title's directory: <span class="highlight darkmode-highlight">PS3_GAME folder, PS3_DISC.sfb, PS3_UPDATE folder (not required)</span>
+</p>
+<p>
+Typical layout of a PSN title's directory: <span class="highlight darkmode-highlight">TROPDIR folder, USRDIR folder, ICON0.png, PARAM.sfo, etc</span>
+</p>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="manage_playstation_3_save_data">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Managing PlayStation 3 Save Data</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+PlayStation 3 save data is specific to each game and saves the progress for your installed games. Should you want to modify, back up or import your own save data from a real PlayStation 3, here are the following locations where save data is stored per operating system:
+</p>
+</div>
+</div>
+</div>
+<div class="guide-con-content context-windows darkmode-panel">
+<div class="anchor-point" id="manage_playstation_3_saves">
+</div>
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/i2PBR7dtcaNN.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For Windows users, save data files can be managed in <span class="highlight darkmode-highlight">\dev_hdd0\home\00000001\savedata\</span>
+</p>
+</div>
+</div>
+<div class="guide-con-content context-linux darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/FrQrB2ZbanaP.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For Linux users, save data files can be managed in <span class="linux-highlight darkmode-highlight">~/.config/rpcs3/dev_hdd0/</span>
+</p>
+</div>
+</div>
+<div class="guide-con-content context-macos darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/N6tDC2Fs7qFj.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For macOS users, save data files can be managed in <span class="macos-highlight darkmode-highlight">~/Library/Application Support/rpcs3/dev_hdd0/home/00000001/savedata/</span>
+</p>
+</div>
+</div>
+<div class="guide-con-content context-bsd darkmode-panel">
+<div class="guide-ico-content darkmode-invert" style="background: url(&#x27;images/On8kny7BA9Zy.png&#x27;) no-repeat center;">
+</div>
+<div class="guide-tx1-heading darkmode-txt">
+<p>
+For FreeBSD users, save data files can be managed in <span class="bsd-highlight darkmode-highlight">~/.config/rpcs3/dev_hdd0/</span>
+</p>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="manage_playstation_3_formats">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Managing PlayStation 3 Game Formats</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+Title IDs that start with a <span class="highlight darkmode-highlight">B</span> are <span class="highlight darkmode-highlight">Blu-Ray disc</span> titles.
+</p>
+<p>
+Title IDs that start with a <span class="highlight darkmode-highlight">N</span> are <span class="highlight darkmode-highlight">PSN</span> titles.
+</p>
+<br>
+<p>
+When working with actual title region IDs, the title's region ID will look something similar to this:
+</p>
+<br>
+<p>
+Example: <span class="highlight darkmode-highlight">BLUS30443</span> is a <span class="highlight darkmode-highlight">US</span> Blu-Ray disc copy of Demon's Souls.
+</p>
+<p>
+Example: <span class="highlight darkmode-highlight">NPEB01393</span> is a <span class="highlight darkmode-highlight">EU</span> PSN copy of Hatsune Miku: Project DIVA F.
+</p>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="install_playstation_3_games">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Installing PlayStation 3 Games</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+.pkg files must be extracted using RPCS3's built-in package installer found under <span class="highlight darkmode-highlight">File > Install Packages/Raps/Edats</span> (or simply drag and drop the .pkg into the main emulator window)
+</p>
+<p>
+.pkg files will be automatically extracted and installed to <span class="highlight darkmode-highlight">\dev_hdd0\game\</span> It is recommended to keep your .pkg files in a safe place on your pc after installing.
+</p>
+<p>
+Blu-ray disc title data can be placed in <span class="highlight darkmode-highlight">\dev_hdd0\disc\</span> or anywhere else except for <span class="highlight darkmode-highlight">\dev_hdd0\game\</span> and can be booted from <span class="highlight darkmode-highlight">File > Boot Game</span> if not present on the game list.
+</p>
+<p>
+PSN title data must be placed in <span class="highlight darkmode-highlight">\dev_hdd0\game\</span>
+</p>
+<p>
+PSN .rap files must be placed in <span class="highlight darkmode-highlight">\dev_hdd0\home\00000001\exdata\</span> (or simply drag and drop them to the main emulator window)
+</p>
+<br>
+<p>
+<i>Note: If you're on Linux, RPCS3 folders are located in <span class="highlight darkmode-highlight">~/.config/rpcs3/dev_hdd0/</span></i>
+</p>
+<p>
+<i>Note: If you're on macOS, RPCS3 folders are located in <span class="highlight darkmode-highlight">~/Library/Application Support/rpcs3/dev_hdd0/</span></i>
+</p>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="install_playstation_3_updates">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Installing PlayStation 3 Game Updates</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+Title updates are handled the same as PSN .pkg files. The. pkg update file must be installed using RPCS3's built-in package installer found under <span class="highlight darkmode-highlight">File > Install Packages/Raps/Edats</span><br>
+ The update will be placed in the title folder that corresponds to the correct region ID. Please note that title updates must be the same region in order to work. Cross-mixing title regions may create irreversible damage to the title.
+</p>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="software_distribution">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block">
+<div class="container-emp-block" style="background: #FF3434;">
+</div>
+<h2>Software Distribution laws in your country</h2>
+</div>
+<div class="container-tx2-block">
+<p>
+When dumping video game software, users are subject to country-specific software distribution laws. RPCS3 is not designed to enable illegal activity. We do not promote piracy nor do we allow it under any circumstances. Please take the time to review copyright and video game software dumping laws and/or policies for your country before proceeding.<br>
+<br>
+By following these instructions, you will do so at your own discretion. Should you follow these instructions against your local law, we shall not be held responsible for your actions.
+</p>
+</div>
+</div>
+<div class="container-con-wrapper">
+<div class="anchor-point" id="dumping_with_playstation_3">
+</div>
+<div class="container-tx1-block">
+<h2>Dumping with a PlayStation 3</h2>
+</div>
+<div class="container-tx2-block">
+<p>
+We recommend that you dump your own PlayStation 3 titles from your own console. This is the most compatible way to migrate your disc-based titles and the only way to dump digital titles to your PC. To do this, you will need a PlayStation 3 system with custom firmware.<br>
+<br>
+For dumping disc-based games, you need to use multiMAN homebrew software in order to dump your disc files. You can transfer those files over to a computer through an external drive or using a FTP connection between your PlayStation 3 and your computer.<br>
+<br>
+<i>Note: The PlayStation 3 has a maximum file size of 4GB. When dumping games which contain files bigger than 4GB, multiMAN will split those files. When you have your dump over on your computer, you must rejoin the split files back together with part merging software such as <a href="http://karmian.org/projects/ps3merge">ps3merge</a>, otherwise the dump will not work.</i><br>
+<br>
+For dumping digital games, you must copy the game folder from dev_hdd0/game/GameID on your console over to the same path on your RPCS3 folder. You also need to get your console's IDPS, the game's RIF and ACT.DAT, in order to generate a .RAP license file to be used in the emulator.<br>
+It is also possible to dump digital content and licenses on <i>any</i> PS3 even without custom firmware, by the way of creating a system backup, and then extracting it with ps3xport software.
+</p>
+</div>
+</div>
+<div class="container-con-wrapper">
+<div class="anchor-point" id="dumping_with_pc">
+</div>
+<div class="container-tx1-block">
+<h2>Dumping with a Desktop PC</h2>
+</div>
+<div class="container-tx2-block">
+<p>
+You can dump titles using your computer by using select compatible Blu-ray drives. Please note that you can only use this method if a .ird file is available online for the decryption of the disc. Not every Blu-ray drive will recognize PlayStation 3 titles due to how PlayStation 3 format discs are designed. Requirements for a Blu-Ray drive to be able to fully read PlayStation 3 discs are: Mediatek chipset and a +6 read offset.
+</p>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="compatible_bd_drives">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Compatible Desktop PC Blu-ray Drives</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+ <p>
+Here's a compiled list of the known compatible Blu-ray drives that are capable of reading PlayStation format discs for use with your computer.
+</p>
+</div>
+</div>
+</div>
+<div class="drives-con-container">
+<div class="container-tx3-block darkmode-txt">
+<div class="anchor-point" id="compatible_bdd_lg">
+</div>
+<div class="container-emp-block">
+</div>
+<span>
+LG Drives </span>
+</div>
+<div class="drives-con-divider darkmode-divider">
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BE16NU50 <span class="drives-txt-revisions">External Drive</span></span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BH14NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BH16NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BH16NS48</span>
+</div>
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BH16NS55</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BH26NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BP50NB40 <span class="drives-txt-revisions">External Drive</span></span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BU20N</span>
+</div>
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BU40N</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>CH12NS30</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>UH12NS30</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH12LS30 <span class="drives-txt-revisions">Some revisions</span></span>
+ </div>
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH14NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH16NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH16NS48</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH24LS30</span>
+</div>
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH24NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WH26NS40</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BH16NS60</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BE14NU40</span>
+</div>
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>WP50NB40</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+</div>
+</div>
+<div class="drives-con-container">
+<div class="container-tx3-block darkmode-txt">
+<div class="anchor-point" id="compatible_bdd_asus">
+</div>
+<div class="container-emp-block">
+</div>
+<span>
+ASUS Drives </span>
+</div>
+<div class="drives-con-divider darkmode-divider">
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BC-08B1LT</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BC-12B1ST <span class="drives-txt-revisions">Some revisions</span></span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BC-12D2HT</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BC-16D1HT</span>
+</div>
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BW-12B1ST</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BW-16D1HT</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+</div>
+<div class="drives-con-outer darkmode-txt" style="display:none">
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+</div>
+</div>
+<div class="drives-con-container">
+<div class="container-tx3-block darkmode-txt">
+<div class="anchor-point" id="compatible_bdd_samsung">
+</div>
+<div class="container-emp-block">
+</div>
+<span>Samsung Drives </span>
+</div>
+<div class="drives-con-divider darkmode-divider">
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>SH-B083L</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>SH-B123L</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+ <span>SE-506</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>SE-406</span>
+</div>
+</div>
+</div>
+<div class="drives-con-container">
+<div class="container-tx3-block darkmode-txt">
+<div class="anchor-point" id="compatible_bdd_lite_on">
+</div>
+<div class="container-emp-block">
+</div>
+<span>LITE-ON Drives </span>
+</div>
+<div class="drives-con-divider darkmode-divider">
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>DH-4O1S</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>IHBS112</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>IHBS312</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>DS-6E2SH <span class="drives-txt-revisions">19C revision</span></span>
+</div>
+</div>
+</div>
+<div class="drives-con-container">
+<div class="container-tx3-block darkmode-txt">
+<div class="anchor-point" id="compatible_bdd_sony">
+</div>
+<div class="container-emp-block">
+</div>
+<span>Sony Drives </span>
+</div>
+<div class="drives-con-divider darkmode-divider">
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>Optiarc 5300S</span>
+</div>
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>PlayStation 3 BDD<span class="drives-txt-revisions">With proprietary adapter</span></span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+</div>
+</div>
+<div class="drives-con-container">
+<div class="container-tx3-block darkmode-txt">
+<div class="anchor-point" id="compatible_bdd_benq">
+</div>
+<div class="container-emp-block">
+</div>
+<span>
+BenQ Drives </span>
+</div>
+<div class="drives-con-divider darkmode-divider">
+</div>
+<div class="drives-con-outer darkmode-txt">
+<div class="drives-con-inner darkmode-txt">
+<div class="drives-ico-bluray darkmode-invert">
+</div>
+<span>BR1000</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+<div class="drives-con-inner drives-txt-hidden">
+<span>XX-XXXXXX</span>
+</div>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="dumping_with_linux">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Dumping with Linux Command Line</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+If you're comfortable with the Linux command-line and you have a compatible Blu-ray drive, you can try ripping PlayStation 3 discs using a Python program called <a href="https://notabug.org/necklace/libray" target="_blank" rel="noopener noreferrer">LibRay</a>.
+</p>
+<p>
+Do note that this method requires an .ird file that matches your title ID to be available on <a href="https://ps3.aldostools.org/ird.html" target="_blank" rel="noopener noreferrer">ps3.aldostools.org/ird</a>. (LibRay will automatically attempt to download the correct .ird file, if it exists, so you do not need to do so manually.) If a matching .ird file is not present, please try the PS3 Disc Dumper mentioned below.
+</p>
+</div>
+</div>
+</div>
+<div class="generic-con-button ">
+<a href="https://notabug.org/necklace/libray" target="_blank">
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/r36mCNPGLJyB.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>LibRay <span class="generic-tx2-label">30KB - Necklace</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="dumping_with_disc_dumper">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Dumping with Disc Dumper</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+This is an automated & user-friendly way of getting a decrypted copy of your PlayStation 3 discs. You must possess one of the aforementioned compatible disc drives to complete the disc dumping procedure. Again, this method will not work with standard Blu-ray drives.
+</p>
+</div>
+</div>
+</div>
+<div class="generic-con-button ">
+<a href="https://github.com/LeoGame1" target="_blank">
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/yiOCROLdfAru.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>Disc Dumper <span class="generic-tx2-label">36 MB - 13xforever</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+1
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Insert a PlayStation 3 format disc title of your choice into your compatible Blu-ray drive.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+2
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Run the PS3 Disc Dumper.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+3
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Press Start.
+</p>
+</div>
+</div>
+<div class="container-con-block darkmode-block">
+<div class="anchor-point" id="dumping_step_by_step">
+</div>
+<div class="container-con-wrapper">
+<div class="container-tx1-block darkmode-txt">
+<h2>Dumping Step-by-step</h2>
+</div>
+<div class="container-tx2-block darkmode-txt">
+<p>
+In case the easy way didn't work for you, here's a compiled list of the step-by-step instructions we used for dumping disc-based PlayStation 3 titles. (Not recommended)
+</p>
+</div>
+</div>
+</div>
+<div class="generic-con-button ">
+<a href="/cdn/tools/patcher.zip" download>
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/wHG4OW8wX9Gc.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>.iso Patcher <span class="generic-tx2-label">78 KB - BlackDaemon</span></span>
+</div>
+</div>
+</a>
+<a href="/cdn/tools/3k3y.zip" download>
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/QxhIxYfZEZqN.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>.iso Tools <span class="generic-tx2-label">3.3 MB - 3K3Y</span></span>
+</div>
+</div>
+</a>
+<a href="https://www.imgburn.com" target="_blank" rel="noopener noreferrer">
+<div class="generic-btn-button">
+<div class="generic-ico-button" style="background: url(&#x27;images/Tf3IQKlbWQEG.png&#x27;) no-repeat center">
+</div>
+<div class="generic-tx1-button">
+<span>ImgBurn <span class="generic-tx2-label">3.8 MB - Lightning UK!</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+1
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Insert a PlayStation 3 format disc title of your choice into your compatible Blu-ray drive.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+2
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Create the .iso image using an .iso dumping program of your choosing, e.g. ImgBurn or IsoBuster.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+3
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Use <a href="https://ps3.aldostools.org/ird.html" target="_blank" rel="noopener noreferrer">ps3.aldostools.org/ird</a> to download the appropriate .ird file that matches your title ID. If there isn't an .ird file that matches your title ID, you cannot use this method to dump your selected PlayStation 3 disc at this time and will need to use your PS3.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+4
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Be sure to check the title ID in case there is a different edition of that title. e.g. Uncharted 2 Game of the Year Edition. You must use the correct .ird with the same title ID, otherwise it will not work. (<i>Example: .ird file for Demon's Souls US disc does not work with Demon's Souls EU disc</i>).
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+5
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Using PS3 ISO Patcher, select the matching .iso and .ird files, then press Patch to apply the decryption keys to the .iso file.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+6
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Using 3K3Y IsoTools press Decrypt button and select the .iso with patched-in decryption keys. This will produce a decrypted .dec.iso file.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+7
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+Optionally, validate that you have successfully obtained the correct copy of your game. <br>
+You will need to install PS3 ISO Rebuilder tool from <a href="https://archive.org/download/ps3-iso-rebuilder-1.0.4.1/PS3-ISO-Rebuilder.zip" target="_blank" rel="noopener noreferrer">archive.org/download/ps3-iso-rebuilder-1.0.4.1</a>
+<br>
+Load your .dec.iso file and your .ird file in the program and let it verify the dump. All of your files must be either Valid or Not required.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+8
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+In 3K3Y ISO Tools, use the Tools drop-down menu to select <span class="highlight darkmode-highlight">ISO > Extract ISO</span> and then select the decrypted .iso file to extract its files.<br>
+Another option is to use 7-zip or any other software that is capable of extracting .iso images and extract to a folder.
+</p>
+</div>
+</div>
+<div class="list-con-container">
+<div class="list-tx1-item darkmode-txt">
+9
+</div>
+<div class="list-tx2-description darkmode-txt">
+<p>
+You are now able to use the extracted .iso files with RPCS3.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer-con-container">
+<div class="footer-con-overlay darkmode-header">
+<div class="wavebar-con-container">
+<div class="wavebar-con-wrap">
+<div class="wavebar-svg-object">
+</div>
+<div class="wavebar-svg-object">
+</div>
+</div>
+</div>
+<div class="footer-con-header">
+<div class="footer-con-outer">
+<div class="footer-con-inner">
+<div class="footer-ico-logo darkmode-footer-logo">
+</div>
+<table class="footer-table-out">
+<tbody><tr>
+<td>
+<div class="footer-table-in">
+<div class="footer-con-bound">
+<div class="footer-tx1-bound">
+<span>Main</span>
+</div>
+<div class="footer-tx2-bound">
+<a href="/blog">
+<span>Blog</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/about">
+<span>About</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/compatibility">
+<span>Compatibility</span>
+</a>
+ </div>
+<div class="footer-tx2-bound">
+<a href="/download">
+<span>Download</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/quickstart">
+<span>Quickstart</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/roadmap">
+<span>Roadmap</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/branding">
+<span>Branding</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/disclaimer">
+<span>Disclaimer</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="/alipay">
+<span>Alipay</span>
+</a>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="footer-table-in">
+<div class="footer-con-bound">
+<div class="footer-tx1-bound">
+<span>GitHub</span>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3/rpcs3" target="_blank">
+<span>Repository</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3/rpcs3/pulls" target="_blank">
+<span>Pull Requests</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3/rpcs3/graphs/contributors" target="_blank">
+<span>Contributors</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3/rpcs3/commits/master" target="_blank">
+<span>Commits</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3/rpcs3/pulse" target="_blank">
+<span>Insights</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3/rpcs3/issues" target="_blank">
+<span>Issues</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="footer-table-in">
+<div class="footer-con-bound">
+<div class="footer-tx1-bound">
+<span>Social</span>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://discord.gg/Jfff8WUz7N" target="_blank">
+<span>Discord</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://forums.rpcs3.net" target="_blank">
+<span>Forum</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://www.youtube.com/c/RPCS3_emu/featured" target="_blank">
+<span>YouTube</span>
+</a>
+</div>
+</a>
+</div>
+</a>
+</div>
+</div>
+</div>
+</td>
+<td class="footer-con-sources">
+<div class="footer-table-in">
+<div class="footer-con-bound">
+<div class="footer-tx1-bound">
+<span>Repos</span>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/RPCS3" target="_blank">
+<span>RPCS3</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/DAGINATSUKO/www-rpcs3" target="_blank">
+<span>Website</span>
+</a>
+</div>
+<div class="footer-tx2-bound">
+<a href="https://github.com/AniLeo/rpcs3-compatibility" target="_blank">
+<span>Compatibility</span>
+</a>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="footer-con-credits">
+<div class="footer-con-outer">
+<div class="footer-con-inner">
+<div class="footer-con-seprator">
+</div>
+<div class="footer-con-foot">
+<div class="footer-con-side">
+<div class="footer-tx1-founder">
+<div class="footer-ico-developer" style="background: url(&#x27;images/MvckuGUbPtvj.png&#x27;) center center / cover no-repeat;">
+</div>
+<div class="footer-ico-developer" style="background: url(&#x27;images/YqkTIJJAmTPV.png&#x27;) center center / cover no-repeat;">
+</div>
+<a href="/about">
+<span>Founded by DH and Hykem</span>
+</a>
+</div>
+</div>
+<div class="footer-con-side">
+<div class="footer-tx1-webmaster">
+<div class="footer-ico-developer" style="background: url(&#x27;images/uVZo4J3pNZg9.png&#x27;) center / cover no-repeat;">
+</div>
+<span>Website by LeoGame1 © 2023</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" data-cf-beacon="{" rayId":"7a51fa7f1c200a75","token":"2d98f3b9a0394355ab27c66293c3546e","version":"2023.2.0","si":100}" crossorigin="anonymous"></script>
+
+
+</body></html>
